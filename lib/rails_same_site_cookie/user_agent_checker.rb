@@ -43,7 +43,7 @@ module RailsSameSiteCookie
     end
 
     def is_mac_osx_version?(major,minor)
-      user_agent.ostry(:family) == 'Mac OS X' and user_agent.os.try(:version).try(:major) == major and user_agent.os.try(:version).try(:minor) == minor
+      user_agent.os.try(:family) == 'Mac OS X' and user_agent.os.try(:version).try(:major) == major and user_agent.os.try(:version).try(:minor) == minor
     end
 
     def is_safari?
